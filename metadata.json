@@ -1,0 +1,6 @@
+{
+  "name": "Tokyo Cleaner Inventory Management",
+  "description": "Automated inventory and supply tracking system for Shibuya Office and Jeffrey Skytree, with QR code generation, mobile-optimized cleaning staff intake, and Google Forms webhook integration.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
