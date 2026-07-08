@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Cormorant Garamond", Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Premium High-Contrast Eye-Safe Dark Slate Palette */
+  --color-bg: #0b0f19;
+  --color-cream: #131c2e;
+  
+  --color-sage-50: #0f172a;
+  --color-sage-100: #1e293b;
+  --color-sage-200: #2c3c58;
+  --color-sage-500: #38bdf8; /* vibrant sky blue */
+  --color-sage-600: #0ea5e9;
+  --color-sage-700: #0284c7;
+  --color-sage-800: #0369a1;
+  --color-sage-900: #075985;
+  --color-sage-950: #0c4a6e;
+
+  --color-stone-50: #070a12;
+  --color-stone-100: #0e1626;
+  --color-stone-150: #152238;
+  --color-stone-200: #1e293b;
+  --color-stone-250: #293548;
+  --color-stone-300: #334155;
+  --color-stone-400: #64748b;
+  --color-stone-500: #94a3b8;
+  --color-stone-600: #cbd5e1;
+  --color-stone-700: #e2e8f0;
+  --color-stone-800: #f1f5f9;
+  --color-stone-850: #f4f6fa;
+  --color-stone-900: #f8fafc;
+
+  --color-sand-50: #070a12;
+  --color-sand-100: #0e1626;
+  --color-sand-150: #152238;
+  --color-sand-200: #1e293b;
+  --color-sand-300: #334155;
+  --color-sand-400: #475569;
+
+  --color-clay-50: #2a1a12;
+  --color-clay-100: #3a2215;
+  --color-clay-500: #f97316; /* high-contrast orange */
+  --color-clay-600: #ea580c;
+  --color-clay-700: #c2410c;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-bg);
+  color: var(--color-stone-700);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display), Georgia, serif;
+  font-weight: 600;
+  color: var(--color-stone-800);
+}
+
+.font-mono {
+  font-family: var(--font-mono), monospace;
+}
+
+/* Scrollbar styles for cleaner dashboards */
+.scrollbar-thin::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: transparent;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: var(--color-stone-200);
+  border-radius: 9999px;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+  background: var(--color-stone-300);
+}
